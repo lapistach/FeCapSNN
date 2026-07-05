@@ -1,7 +1,7 @@
 # FeCapSNN
 
 A Spiking Neural Network (SNN) framework with learnable membrane time constants represented by analog ferroelectric capacitances. 
-This repository contains the origin codes and TensorBoard logs for the paper [TBD](https://fr.wikipedia.org/wiki/TBD). The code was adapted from the [original work](https://github.com/fangwei123456/Parametric-Leaky-Integrate-and-Fire-Spiking-Neuron/) by Fang et al. where all installation and training informations can be found. In this work, all the code is implemented in Jupyter Notebooks on Google Colab and was run on the A100 GPUs offered by Colab.
+This repository contains the origin codes and TensorBoard logs for the paper [TBD](https://fr.wikipedia.org/wiki/TBD). The code was adapted from [this original work](https://github.com/fangwei123456/Parametric-Leaky-Integrate-and-Fire-Spiking-Neuron/) by Fang et al. where all installation and training informations can be found. In this work, all the code is implemented in Jupyter Notebooks on Google Colab and was run on the A100 GPUs offered by Colab.
 
 ## Example
 
