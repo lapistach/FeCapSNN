@@ -1,0 +1,73 @@
+[build-system]
+requires = [
+    "setuptools>=77.0.3",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["spikingjelly*"]
+
+[project]
+name = "spikingjelly"
+version = "0.0.0.0.15"
+description = "A deep learning framework for SNNs built on PyTorch."
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "PKU MLG, PCL, and other contributors"},
+    {email = "fwei@pku.edu.cn"},
+    {email = "chyq@pku.edu.cn"},
+    {email = "yfhuang@pku.edu.cn"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.6.0",
+    "torchvision",
+    "torchaudio",
+    "tensorboard",
+    "numpy",
+    "scipy",
+    "einops",
+    "tqdm",
+    "matplotlib",
+    "SciencePlots",
+    "h5py",
+    "pydantic",
+]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: OS Independent",
+]
+license-files = ["LICENSE", "LICENSES/translations/*"]
+
+[project.optional-dependencies]
+cupy11 = ["cupy-cuda11x"]
+cupy12 = ["cupy-cuda12x"]
+triton = ["triton>=3.3.1"]
+nir = ["nir", "nirtorch"]
+lightning = ["lightning", "jsonargparse[signatures]"]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pydata-sphinx-theme>=0.16.1",
+    "sphinx>=8.0.0,<9",
+]
+
+[project.urls]
+Homepage = "https://github.com/fangwei123456/spikingjelly"
+Documentation = "https://spikingjelly.readthedocs.io/"
+
+[tool.ruff]
+src = ["spikingjelly", "test"]
+exclude = ["*.ipynb"]
+line-length = 88
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "double"
+
+[tool.ruff.lint]
+ignore = ["E402", "E731", "E741", "F403"]
