@@ -77,6 +77,15 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Colab / Google Drive sync artifacts
+*.gsheet
+*.gdoc
+
+# OS artifacts
+.DS_Store
+Thumbs.db
 
 # IPython
 profile_default/
