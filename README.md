@@ -22,7 +22,7 @@ python setup.py install
 
 ## Example
 
-After creating a dataset folder as explained [here](https://github.com/fangwei123456/Parametric-Leaky-Integrate-and-Fire-Spiking-Neuron/tree/main#datasets) you can :
+After creating a dataset folder as explained [here](https://github.com/fangwei123456/Parametric-Leaky-Integrate-and-Fire-Spiking-Neuron/tree/main#datasets), you can :
 - run `Training.py` to train the SNN.
 - run `PostProcessing.py` to find the parameters that yield the highest accuracy.
 - run `Inference.py` to perform inference with the selected best parameters apart from the membrane time constants which are readapted to the capacitance values of your choosing.
